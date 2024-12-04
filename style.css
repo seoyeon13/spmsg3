@@ -1,0 +1,76 @@
+/*		폰트*/
+	@font-face {
+	    font-family: 'Pretendard-Black';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+	    font-weight: 900;
+	    font-style: normal;}
+	@font-face {
+	    font-family: 'Pretendard-ExtraBold';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+	    font-weight: 800;
+	    font-style: normal;}
+	@font-face {
+	    font-family: 'Pretendard-Bold';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+	    font-weight: 700;
+	    font-style: normal;}
+	@font-face {
+	    font-family: 'Pretendard-SemiBold';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+	    font-weight: 600;
+	    font-style: normal;}
+	@font-face {
+	    font-family: 'Pretendard-Medium';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+	    font-weight: 500;
+	    font-style: normal;}
+	@font-face {
+	    font-family: 'Pretendard-Regular';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	    font-weight: 400;
+	    font-style: normal;}
+	@font-face {
+	    font-family: 'Pretendard-Light';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+	    font-weight: 300;
+	    font-style: normal;}
+	@font-face {
+	    font-family: 'Pretendard-ExtraLight';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+	    font-weight: 200;
+	    font-style: normal;}
+	@font-face {
+	    font-family: 'Pretendard-Thin';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+	    font-weight: 100;
+	    font-style: normal;}
+
+/*스타일*/
+		body{word-break: keep-all;}
+		html,body,h1,h2,h3,p{margin: 0;padding: 0;}
+		h1{font-size: 3.5rem;line-height: 5rem;
+			font-family: 'Pretendard-ExtraBold';}
+		p{font-size: 1.3rem;line-height: 1.8rem;
+			font-family: 'Pretendard-Regular';}
+
+		.p-bd{font-family: 'Pretendard-Bold';display: inline;}
+		.fade{animation: fadein 0.5s linear forwards;position: relative;}
+	@keyframes fadein{
+		from{top: 100px; opacity: 0}
+		to{top: 0px; opacity: 1}}
+.talk-head {display: block;position: relative;padding: 25px;
+    left: 430px;text-align: left;margin-top: 50px;margin-bottom: 35px;
+    background: #E8E8E8;height: auto;width: 800px;border-radius: 30px;}
+.talk-l {display: block;position: relative;padding: 25px;
+    left: 430px;text-align: left;margin-bottom: 35px;
+    background: #E8E8E8;height: auto;width: 450px;border-radius: 30px;}
+.talk-l:after,.talk-head:after {content:"";position: absolute;
+    width: 40px;height: 46px;bottom: 0%;left: -10px;
+    z-index: -1;background-image: url(img/tail.svg);}
+
+.talk-r {display: block;position: relative;padding: 25px;
+	color: white;left: 820px;text-align: left;margin-bottom: 35px;
+    background: #0089FE;height: auto;width: 450px;border-radius: 30px;}
+.talk-r:after {content:"";position: absolute;
+    width: 40px;height: 46px;bottom: 0%;right: -10px;
+    z-index: -1;background-image: url(img/tail2.svg);}
